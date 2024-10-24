@@ -1,0 +1,487 @@
+{
+	"info": {
+		"_postman_id": "51968f2a-8ca4-42fb-9a26-eb4e1b34e6af",
+		"name": "car rental",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36378729"
+	},
+	"item": [
+		{
+			"name": "cars",
+			"item": [
+				{
+					"name": "add-car",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"bmw car\",\r\n    \"model\":\"128\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/cars/add-car",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"add-car"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-car",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"updated car\",\r\n    \"model\":\"toyota\",\r\n    \"rental_status\":\"available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/cars/update-car/66b528884f68057e4ce97bbf",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"update-car",
+								"66b528884f68057e4ce97bbf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-cars",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/cars/get-all-cars",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"get-all-cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "specificCar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/cars/66b528884f68057e4ce97bbf",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"66b528884f68057e4ce97bbf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/cars/delete-car/66b527f44f68057e4ce97bbe",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"delete-car",
+								"66b527f44f68057e4ce97bbe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getByModel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/cars/models?model=128",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"models"
+							],
+							"query": [
+								{
+									"key": "model",
+									"value": "128"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "availableModel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/cars/available/toyota",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"available",
+								"toyota"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rented-or-model",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/cars/rented-or-model/128",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"rented-or-model",
+								"128"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "available-or-rented",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/cars/available-or-rented/128",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"available-or-rented",
+								"128"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "customers",
+			"item": [
+				{
+					"name": "signUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"ahmed\",\r\n    \"email\":\"ahmed@gmail.com\",\r\n    \"password\":123,\r\n    \"phoneNumber\":\"01212\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"mo0o@gmail.com\",\r\n    \"password\":\"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/signin",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllCustomers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/all-cutomers",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"all-cutomers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "specificCustomer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/cutomer/:customerId",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cutomer",
+								":customerId"
+							],
+							"variable": [
+								{
+									"key": "customerId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"mahmoud\",\r\n    \"email\":\"hoda@gmail.com\",\r\n    \"password\":\"321\",\r\n    \"phoneNumber\":\"01214\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/customer/66b8c6554c8aa655e543a55c",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"66b8c6554c8aa655e543a55c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/customer/66b8e00dfceb56fb784894aa",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"66b8e00dfceb56fb784894aa"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "rentals",
+			"item": [
+				{
+					"name": "createRental",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"carId\":\"66b528884f68057e4ce97bbf\",\r\n    \"customerId\":\"66b8c6554c8aa655e543a55c\",\r\n    \"returnDate\":\"12-9-2024\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/rentals/create-rental",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"rentals",
+								"create-rental"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateRental",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"returnDate\":\"12-10-2024\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/rentals/66ba3ffc8bafd1b2e6ad09ed",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"rentals",
+								"66ba3ffc8bafd1b2e6ad09ed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteRental",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/rentals/66ba7037033caa7c468d09ce",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"rentals",
+								"66ba7037033caa7c468d09ce"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllRentals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/rentals",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"rentals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSpecificRental",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/rentals/66ba3ffc8bafd1b2e6ad09ed",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"rentals",
+								"66ba3ffc8bafd1b2e6ad09ed"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "model",
+			"value": "128"
+		}
+	]
+}

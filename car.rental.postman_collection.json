@@ -274,7 +274,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/all-cutomers",
+							"raw": "localhost:3000/all-customers",
 							"host": [
 								"localhost"
 							],

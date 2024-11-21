@@ -1,7 +1,7 @@
 # Car Rental Management System
 
 ## Overview
-The Car Rental Management System is a full-stack application designed to facilitate the rental of cars. Built using Node.js, Express, and MongoDB, this system allows customers to manage their accounts, view available cars, and handle rentals seamlessly.
+The Car Rental Management System is a backend application designed to facilitate the rental of cars. Built using Node.js, Express, and MongoDB, this system allows customers to manage their accounts, view available cars, and handle rentals seamlessly.
 
 ## Features
 - **User Registration and Authentication**
